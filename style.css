@@ -19,13 +19,19 @@ nav {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  position: relative;
+  top: 6px;
 }
 
 /* Other Styles */
 
 .center {
   margin: auto;
-  padding: 100px;
+  padding: 100px 100px 0 100px;
+}
+
+div:nth-of-type(2) {
+	padding: 50px 100px 100px 100px;
 }
 
 .center img {
@@ -34,29 +40,42 @@ nav {
   	margin-right: auto;
 }
 
-/*.center div {
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-}*/
-
 input {
 	margin-left: auto;
 	margin-right: auto;
 	height: 42px;
-	width: 450px;
+	width: 400px;
 	border-radius: 2rem;
 	border: 1px solid #d0d0d0;
 	display: block;
+	padding: 0 40px;
 }
 
-img.mic {
+input:hover {
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+	border-color: rgba(255, 255, 255, 0);
+}
+
+input:focus {
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+	border-color: rgba(255, 255, 255, 0);
+}
+
+.mic {
 	width: 24px;
-	display: inline-block;
+	display: block;
+	left: 214px;
+	bottom: 53px;
+	position: relative;
 }
 
-.fa-search {
-	display: inline-block;
+.search-icon {
+	display: block;
+	width: 18px;
+	right: 213px;
+	bottom: 30px;
+	position: relative;
+	color: #868686;
 }
 
 ul {
